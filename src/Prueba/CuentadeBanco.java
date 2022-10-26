@@ -2,11 +2,13 @@ package Prueba;
 
 public class CuentadeBanco {
     
-    	private int NodeCuenta;
-    	private int NoTelefono;
+    	private String NodeCuenta;
+    	private String NoTelefono;
     	private double saldo;
     	private String NCliente,email;
     	//Metodos funcionales
+    	
+  
     	public void Depositar(double montodeposito) {
         	this.saldo += montodeposito;
         	mostrarDatos();
@@ -44,16 +46,16 @@ public class CuentadeBanco {
     		
     	
     	 //Metodos setters
-    	public void ponerNodeCuenta(int NodeCuenta) {
+    	public void ponerNodeCuenta(String NodeCuenta) {
     		this.NodeCuenta=NodeCuenta;
     	}
-    	public int mostrarNodeCuenta() {
+    	public String mostrarNodeCuenta() {
     		return this.NodeCuenta;
     	}
-    	public void ponerNoTelefono(int NoTelefono) {
+    	public void ponerNoTelefono(String NoTelefono) {
     		this.NoTelefono=NoTelefono;
     	}
-    	public int mostrarNoTelefono() {
+    	public String mostrarNoTelefono() {
     		return this.NoTelefono;
     	}
     	public void ponersaldo(double saldo) {
